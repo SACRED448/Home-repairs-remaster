@@ -1,3 +1,35 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Regular.ttf');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Italic.ttf');
+	font-style: italic;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Bold.ttf');
+	font-weight: 700;
+}
+
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('/fonts/Roboto-Bold.ttf');
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'segoescript';
+	src: url('/fonts/segoescript.ttf');
+	font-weight: 400;
+}
+
 :root {
     --color1: #000;
     --color2: #EBEEF6; /* backround color */
@@ -37,25 +69,28 @@ body {
 
 /* Header styles */
 
-header {
-    padding-bottom: 500px;
-}
-
 .header {
-    background: url("/img/background header.png"), lightgray 50% / cover no-repeat;
+    /* padding-bottom: 500px; */
+    width: 100%;
+    height: 100vh;
+    background: url("/img/background header.png"), lightgray 50% / cover no-repeat; 
 	box-shadow: 1920px 4px 0px 0px rgba(0, 0, 0, 0.10) inset;
-    
 }
 
 .header-logo {
-    margin: 0 160px 0 0; 
+    
 }
 
 .header-title {
-    margin: 0;
+    position: relative;
+    left: 2.8em;
     max-width: 600px;
-    margin-left: 110px;
     line-height: 70px;
+}
+
+.navbar-brand {
+    margin: 0 380px 0 0;
+    /* max-width: 529px; */
 }
 
 #price {
@@ -64,4 +99,19 @@ header {
 
 .navbar {
     margin-bottom: 300px;
+}
+
+.navbar-nav {
+    
+}
+
+
+/* Адаптивная вёрстка */
+
+@media (max-width: 768px) {
+    .header {
+        background: url("/img/background header.png") cover no-repeat; 
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
 }
