@@ -89,24 +89,55 @@ body {
 }
 
 .navbar-brand {
-    margin: 0 380px 0 0;
+    /* margin: 0 380px 0 0; */
     /* max-width: 529px; */
 }
 
+#our-works {
+    padding: 0;
+}
+
+#submit-your-application {
+    padding: 0;
+}
+
+#reviews {
+    padding: 0;
+}
+
+#services {
+    padding: 0;
+}
+
 #price {
-    padding-right: 0;
+    /* padding-right: 0; */
+    padding: 0;
 }
 
 .navbar {
     margin-bottom: 300px;
 }
 
-.navbar-nav {
-    
+
+.nav-link {
+    line-height: 1em; /* Позволяет уменьшать область кликабельности ссылки*/
+    /* padding: 0; */
 }
 
 
 /* Адаптивная вёрстка */
+
+@media (max-width: 1600px) {
+    .navbar-brand {
+        
+    }
+    .header {
+        background: url("/img/background header.png") cover no-repeat; 
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
 
 @media (max-width: 768px) {
     .header {
